@@ -4,8 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Omnifood is an AI-powered food subscription that will make you healthy again, 365 days per year. It's tailored to your personal tastes and nutritional needs.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="icon" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -16,7 +20,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/queries.css">
 
-  <title>Omnifood</title>
+  <title>Omnifood &mdash; Never cook again!</title>
 </head>
 
 <body>
@@ -62,8 +66,8 @@
             personal tastes and nutritional needs.
           </p>
 
-          <a href="#" class="btn btn--full margin-right-sm">Start eating well</a>
-          <a href="#" class="btn btn--outline">Learn more &darr;</a>
+          <a href="#tryit" class="btn btn--full margin-right-sm">Start eating well</a>
+          <a href="#how" class="btn btn--outline">Learn more &darr;</a>
 
           <div class="delivered-meals">
             <div class="delivered-imgs">
@@ -81,7 +85,16 @@
         </div>
 
         <div class="hero-img-box">
-          <img src="img/hero.png" class="hero-img" alt="Woman enjoying food, meals on tables">
+          <picture>
+            <source srcset="img/hero.webp" type="image/webp" />
+            <source srcset="img/hero-min.png" type="image/png" />
+
+            <img
+              src="img/hero-min.png"
+              class="hero-img"
+              alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+            />
+          </picture>
         </div>
 
       </div>
@@ -388,7 +401,7 @@
             </li>
           </ul>
           <div class="plan-sign-up">
-            <a href="#" class="btn btn--full">Start eating well</a>
+            <a href="#tryit" class="btn btn--full">Start eating well</a>
           </div>
         </div>
 
@@ -419,7 +432,7 @@
           </ul>
 
           <div class="plan-sign-up">
-            <a href="#" class="btn btn--full">Start eating well</a>
+            <a href="#tryit" class="btn btn--full">Start eating well</a>
           </div>
 
         </div>
@@ -584,8 +597,9 @@
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+  <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
   <script defer src="/js/script.js" ></script>
+
 </body>
 
 </html>
